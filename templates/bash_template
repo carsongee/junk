@@ -1,0 +1,107 @@
+#!/bin/bash
+#
+# Author: Carson Gee <x@carsongee.com>
+#
+# Template bash script.
+
+PATH="/sbin:/usr/sbin:/bin:/usr/bin" 
+
+
+
+EXPECTED_ARGS=1
+E_BADARGS=65
+
+progname=$(basename $0) 
+usage()
+{
+
+	cat <<EOF
+Usage: bash_template [options] SOURCE...
+ or: bash_template [options] DIRECTORY
+
+Do something with something. Write your man page description here.
+
+Options:
+ --help print this help message
+ -o, --option=STRING do option
+ -d, --debug debug program
+ -n, --dry-run show what the script would do
+ -q, --quiet quiet output
+ -v, --verbose verbose output
+
+EOF
+}
+
+SHORTOPTS="o:dnqv"
+LONGOPTS="help,option:,debug,dry-run,quiet,verbose"
+
+if $(getopt -T >/dev/null 2>&1) ; [ $? = 4 ] ; then # New longopts getopt.
+ OPTS=$(getopt -o $SHORTOPTS --long $LONGOPTS -n "$progname" -- "$@")
+else # Old classic getopt.
+ # Special handling for --help on old getopt.
+ case $1 in --help) usage ; exit 0 ;; esac
+ OPTS=$(getopt $SHORTOPTS "$@")
+fi
+
+if [ $? -ne 0 ]; then
+ echo "'$progname --help' for more information" 1>&2
+ exit 1
+fi
+
+eval set -- "$OPTS"
+
+option=""
+debug=false
+quiet=false
+verbose=false
+
+while [ $# -gt 0 ]; do
+	: debug: $1
+	case $1 in
+		--help)
+			usage
+			exit 0
+			;;
+		-o|--option)
+			option=$2
+			shift 2
+			;;
+		-d|--debug)
+			debug=true
+			shift
+			;;
+		-q|--quiet)
+			quiet=true
+			shift
+			;;
+		-v|--verbose)
+			verbose=true
+			shift
+			;;
+		--)
+			shift
+			break
+			;;
+		*)
+			echo "Internal Error: option processing error: $1" 1>&2
+			exit 1
+			;;
+	esac
+done
+
+if [ $# -ne $EXPECTED_ARGS ] ; then
+	usage
+	exit $E_BADARGS
+fi
+
+if $verbose; then
+	echo "Verbose not implemented"
+fi
+
+if ! $quiet; then
+	echo "Not being quiet"
+fi
+
+$debug && echo "No bugs found here."
+
+exit 0
