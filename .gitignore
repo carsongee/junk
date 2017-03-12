@@ -87,3 +87,6 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+/web/start/index.html
+/web/start/style.css

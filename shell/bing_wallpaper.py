@@ -21,7 +21,6 @@ def get_wallpaper():
     except OSError as exc:
         if exc.args[0] != 17:
             raise
-            
     wallpaper = requests.get('{}{}'.format(BASE_URL, url), stream=True)
     with open(join(DOWNLOAD_PATH, basename(url)), 'wb') as file_descriptor:
         for chunk in wallpaper.iter_content(chunk_size=128):
