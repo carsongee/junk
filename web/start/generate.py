@@ -3,8 +3,8 @@
 Generates a little start page.
 """
 from __future__ import print_function
-import io
 from glob import glob
+import io
 from os.path import dirname, expanduser, join, realpath
 from random import randint
 
