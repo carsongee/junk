@@ -1,0 +1,28 @@
+greetings:
+  - Welcome
+  - Fuck You
+  - Top of the Morning
+  - Bliss to You
+  - Suck It
+  - Youʼre the Best
+  - Down with the Tyrant
+  - Hold on to your Butts Itʼs
+fixed_links:
+  - url: https://mail.worldminus.us
+    name: Postman
+  - url: https://gmail.com
+    name: Martinet
+  - url: https://google.com
+    name: Oracle
+  - url: https://github.com
+    name: Scribe
+  - url: https://feedly.com
+    name: Crier
+  - url: https://app.commonkey.com
+    name: Harpocrates
+  - url: https://superpedestrian-dev.signin.aws.amazon.com/console
+    name: Atlas
+  - url: https://facebook.com
+    name: Opiate
+  - url: http://carsongee.com
+    name: Vanity
