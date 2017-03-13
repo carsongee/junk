@@ -1,4 +1,7 @@
-/* Root tags */
+/* Root tags */]
+a {
+    color: #e21bd0 !important;
+}
 body {
     {% if background_img %}
     background: url('file://{{ background_img }}') no-repeat center center fixed;
@@ -6,12 +9,12 @@ body {
     {% endif %}
 }
 h1 {
-    color: #fefefe;
+    color: #f0f0f0;
     text-shadow:
-      -2px -2px 1px #3e3e3e,
-      2px -2px 1px #3e3e3e,
-      -2px 2px 1px #3e3e3e,
-      2px 2px 1px #3e3e3e;
+      -2px -2px 1px #1e1e1e,
+      2px -2px 1px #1e1e1e,
+      -2px 2px 1px #1e1e1e,
+      2px 2px 1px #1e1e1e;
 }
 
 
@@ -19,6 +22,25 @@ h1 {
 .center {
     text-align: center;
 }
+.center p {
+    color: #f0f0f0;
+    text-shadow:
+      -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000;
+}
+.column:not(.center) {
+    background: rgba(15, 9, 13, .69);
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: 1rem;
+}
 .header {
     margin-top: 4rem;
+}
+.weather {
+    position: absolute;
+    top: 0;
+    right: 0;
 }

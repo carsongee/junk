@@ -23,10 +23,46 @@
   <body>
     <div class="container">
       <div class="row header">
-        <div class="column center ">
-          <h1>Welcome Carson</h1>
+        <div class="column center">
+          <h1>¡{{ greeting }} Carson!</h1>
         </div>
       </div>
+      {% if quote %}
+      <div class="row">
+        <div class="column center">
+          <p>{{ quote.quote }} - {{ quote.name }}</p>
+        </div>
+      </div>
+      {% endif %}
+      <div class="row">
+        <div class="column">
+          <ul>
+            {% for link in fixed_links %}
+            <li><a href="{{ link.url }}">{{ link.name }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="column">
+          <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=200&amp;wkst=2&amp;bgcolor=%23ffccff&amp;src=carson%40superpedestrian.com&amp;color=%231B887A&amp;ctz=America%2FNew_York" style="border-width:0" width="275" height="325" frameborder="0" scrolling="no"></iframe>
+        </div>
+        <div class="column">
+          <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=200&amp;wkst=2&amp;bgcolor=%23ffccff&amp;src=x%40worldminus.us&amp;color=%236B3304&amp;ctz=America%2FNew_York" style="border-width:0" width="270" height="325" frameborder="0" scrolling="no"></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="weather">
+      <span style="display: block !important; width: 180px; text-align: center; font-family: sans-serif; font-size: 12px;">
+        <a
+          href="http://www.wunderground.com/cgi-bin/findweather/getForecast?query=zmw:02138.1.99999&bannertypeclick=wu_simplewhite"
+          title="Cambridge, Massachusetts Weather Forecast"
+          target="_blank"
+          >
+          <img
+            src="http://weathersticker.wunderground.com/weathersticker/cgi-bin/banner/ban/wxBanner?bannertype=wu_simplewhite&airportcode=KBOS&ForcedCity=Cambridge&ForcedState=MA&zip=02138&language=EN"
+            alt="Find more about Weather in Cambridge, MA"
+            width="260" />
+        </a>
+      </span>
     </div>
   </body>
 </html>
