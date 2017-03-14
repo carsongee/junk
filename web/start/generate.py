@@ -2,7 +2,6 @@
 """
 Generates a little start page.
 """
-from __future__ import print_function
 from glob import glob
 import io
 from os.path import dirname, expanduser, join, realpath
@@ -62,6 +61,4 @@ def main():
             )
 
 if __name__ == '__main__':
-    print('Starting')
     main()
-    print('Ending')

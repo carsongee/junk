@@ -16,6 +16,8 @@ fixed_links:
     name: Oracle
   - url: https://github.com
     name: Scribe
+  - url: https://build.internal.superpedestrian.com
+    name: Butler
   - url: https://feedly.com
     name: Crier
   - url: https://app.commonkey.com

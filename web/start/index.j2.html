@@ -23,22 +23,22 @@
   <body>
     <div class="container">
       <div class="row header">
-        <div class="column center">
+        <div class="column header center">
           <h1>¡{{ greeting }} Carson!</h1>
         </div>
       </div>
       {% if quote %}
       <div class="row">
-        <div class="column center">
+        <div class="column center header">
           <p>{{ quote.quote }} - {{ quote.name }}</p>
         </div>
       </div>
       {% endif %}
       <div class="row">
-        <div class="column">
-          <ul>
+        <div class="column center">
+          <ul class="bulletless">
             {% for link in fixed_links %}
-            <li><a href="{{ link.url }}">{{ link.name }}</a></li>
+            <li><a class="button wobble" href="{{ link.url }}">{{ link.name }}</a></li>
             {% endfor %}
           </ul>
         </div>
@@ -51,10 +51,10 @@
       </div>
     </div>
     <div class="row">
-      <div class="column">
+      <div class="column center">
         <img src="https://lh3.googleusercontent.com/7Sq_mlk-LAT4Ot5h1CypBurBUjUhOXHcjvsnzYsA5mNek3Akqlm3fP_FmcedAGKCLF6DW_w2DKGKh4xqxBisQ7Ac8gz8gqVHEMCn9mvqSN6R7X2D-BpEnEROR_1bgAnwYvP2PQ">
       </div>
-      <div class="column">
+      <div class="column center">
         <img src="https://lh3.googleusercontent.com/WxkfvUzcLM_K8elAcvarGSfzo36X38VsS0WOSTMM2MK-jT-xGWpK4kLAToC_7PVEUJLQOG3dlsSkm4wBlCO4waEfFqU8S7_CL9eFUJ76m42lPtZrqNvL0WN5D90tzpPgxtAKkQ">
       </div>
     </div>
