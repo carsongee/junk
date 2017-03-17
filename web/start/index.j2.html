@@ -36,9 +36,21 @@
       {% endif %}
       <div class="row">
         <div class="column center">
-          <ul class="bulletless">
+          <ul class="bulletless blocks">
             {% for link in fixed_links %}
-            <li><a class="button wobble" href="{{ link.url }}">{{ link.name }}</a></li>
+            <li>
+              <a class="top-button button wobble" href="{{ link.url }}">{{ link.name }}</a>
+              {% if link.subs %}
+              <a class="plus" href="#">+</a>
+              <ul class="sub-menu bulletless">
+                {% for sublink in link.subs %}
+                <li>
+                  <a class="sub-button button wobble" href="{{ sublink.url }}">{{ sublink.name }}</a>
+                </li>
+                {% endfor %}
+              </ul>
+              {% endif %}
+            </li>
             {% endfor %}
           </ul>
         </div>
@@ -72,5 +84,21 @@
         </a>
       </span>
     </div>
+    <script type="text/javascript">
+      var subMenuLinks = document.getElementsByClassName('plus');
+      var index;
+      for(index = 0; index < subMenuLinks.length; index++) {
+        subMenuLinks[index].onclick = function(e) {
+          var menu = this.nextElementSibling.style;
+          if (menu.visibility == 'visible') {
+            menu.visibility = 'hidden';
+          } else {
+            menu.visibility = 'visible';
+          }
+        }
+        subMenuLinks[index].nextElementSibling
+          .style.visibility = 'hidden';
+      }
+    </script>
   </body>
 </html>

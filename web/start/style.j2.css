@@ -20,11 +20,11 @@ h1 {
 
 /* Classes */
 
+.blocks li{
+    position: relative;
+}
 .bulletless {
     list-style-type: none;
-}
-.button {
-    width: 20rem;
 }
 .center {
     text-align: center;
@@ -45,6 +45,34 @@ h1 {
 }
 .header {
     margin-top: 4rem;
+}
+.plus {
+    background: linear-gradient(to bottom right, #f60071, #ffb2fd);
+    color: #0666cc;
+    display: inline-block;
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 3rem;
+    margin-left: -3rem;
+    position: relative;
+    top: .5rem;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.sub-button {
+    font-size: .8rem;
+    padding: 0 1.0rem;
+    width: 10rem;
+}
+.sub-menu {
+    column-count: 3;
+    column-gap: 2rem;
+    left: 24.3rem;
+    position: absolute;
+    top: -1.4rem;
+}
+.top-button {
+    width: 20rem;
 }
 .weather {
     position: absolute;
@@ -68,8 +96,8 @@ h1 {
 .wobble:hover,
 .wobble:focus,
 .wobble:active {
-	animation-name: wobble;
 	animation-duration: 1s;
-	animation-timing-function: ease-in-out;
+	animation-name: wobble;
 	animation-iteration-count: 1;
+	animation-timing-function: ease-in-out;
 }

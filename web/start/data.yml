@@ -14,8 +14,35 @@ fixed_links:
     name: Martinet
   - url: https://google.com
     name: Oracle
-  - url: https://github.com
+  - url: https://github.com/pulls
     name: Scribe
+    subs:
+      - name: account
+        url: https://github.com/superpedestrian/sp-web-account
+      - name: android
+        url: https://github.com/superpedestrian/sp-android-project
+      - name: ansible
+        url: https://github.com/superpedestrian/ansible-cm
+      - name: archelon
+        url: https://github.com/carsongee/archelon
+      - name: consumer
+        url: https://github.com/superpedestrian/sp-web-consumer
+      - name: ios
+        url: https://github.com/superpedestrian/sp-ios-mywheel
+      - name: lambada
+        url: https://github.com/superpedestrian/lambada
+      - name: lambda-ops
+        url: https://github.com/Superpedestrian/sp-lambda-ops
+      - name: jenkins
+        url: https://github.com/superpedestrian/sp-jenkins-build-tools
+      - name: mfg-cli
+        url: https://github.com/superpedestrian/sp-mfg-cli
+      - name: pytest-pylint
+        url: https://github.com/carsongee/pytest-pylint
+      - name: wheels
+        url: https://github.com/superpedestrian/sp-web-wheel-api
+      - name: wheel support
+        url: https://github.com/superpedestrian/sp-web-wheel-support
   - url: https://build.internal.superpedestrian.com
     name: Butler
   - url: https://feedly.com
