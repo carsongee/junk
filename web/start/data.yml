@@ -3,10 +3,12 @@ greetings:
   - Fuck You
   - Top of the Morning
   - Bliss to You
+  - Youʼre Going to Make it
   - Suck It
   - Youʼre the Best
   - Down with the Tyrant
-  - Hold on to your Butts Itʼs
+  - Hold on to your Butts, Itʼs
+  - Lose your Mind, Itʼs
 fixed_links:
   - url: https://mail.worldminus.us
     name: Postman
@@ -45,12 +47,44 @@ fixed_links:
         url: https://github.com/superpedestrian/sp-web-wheel-support
   - url: https://build.internal.superpedestrian.com
     name: Butler
+    subs:
+      - name: account
+        url: https://build.internal.superpedestrian.com/job/Consumer%20Software/job/sp-web-consumer-site
+      - name: android
+        url: https://build.internal.superpedestrian.com/job/Consumer%20Software/job/android/
+      - name: bauer
+        url: https://build.internal.superpedestrian.com/job/Embedded%20Software/job/sp-emb-bauer-app/
+      - name: consumer
+        url: https://build.internal.superpedestrian.com/job/Consumer%20Software/job/sp-web-consumer-site
+      - name: jenkins-tools
+        url: https://build.internal.superpedestrian.com/job/DevOps/job/sp-jenkins-build-tools/
+      - name: ios
+        url: https://build.internal.superpedestrian.com/job/Consumer%20Software/job/ios
+      - name: mfg-cli
+        url: https://build.internal.superpedestrian.com/job/Manufacturing/job/sp-mfg-cli/
+      - name: wheel-api
+        url: https://build.internal.superpedestrian.com/job/Consumer%20Software/job/sp-web-wheel-api
   - url: https://feedly.com
     name: Crier
   - url: https://app.commonkey.com
     name: Harpocrates
   - url: https://superpedestrian-dev.signin.aws.amazon.com/console
     name: Atlas
+    subs:
+      - name: EB
+        url: https://console.aws.amazon.com/elasticbeanstalk/home?region=us-east-1
+      - name: EC2
+        url: https://console.aws.amazon.com/ec2/v2/home?region=us-east-1
+      - name: IAM
+        url: https://console.aws.amazon.com/iam/home?region=us-east-1
+      - name: Lambda
+        url: https://console.aws.amazon.com/lambda/home?region=us-east-1
+      - name: RDS
+        url: https://console.aws.amazon.com/rds/home?region=us-east-1
+      - name: Route 53
+        url: https://console.aws.amazon.com/route53/home?region=us-east-1
+      - name: S3
+        url: https://console.aws.amazon.com/s3/home?region=us-east-1
   - url: https://facebook.com
     name: Opiate
   - url: http://carsongee.com
