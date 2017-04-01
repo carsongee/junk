@@ -23,7 +23,7 @@ def start_page():
 @app.route('/style.css')
 def style():
     context = dict()
-    bing = 'http://www.bing.com'
+    bing = 'https://www.bing.com'
     try:
         response = requests.get(
             bing + '/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=en-US'
