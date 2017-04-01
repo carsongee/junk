@@ -32,8 +32,7 @@ def rando(list_like):
     return list_like[randint(0, len(list_like) - 1)]
 
 
-def main():
-    """Main function."""
+def make_context():
     context = dict()
     data = yaml.load(io.open(join(PATH, 'data.yml'), 'r', encoding='UTF-8'))
     context['greeting'] = rando(data['greetings'])
@@ -46,10 +45,15 @@ def main():
         ).json())
     except requests.RequestException:
         pass
+    return context
 
+
+def main():
+    """Main function."""
+    context = make_context()
     background_list = glob(WALLPAPER_DIR + '*.jpg')
     if background_list:
-        context['background_img'] = rando(background_list)
+        context['background_img'] = 'file://' + rando(background_list)
     for src, dst in TEMPLATES:
         with io.open(
                 join(PATH, dst),
