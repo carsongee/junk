@@ -28,7 +28,9 @@ fixed_links:
       - name: archelon
         url: https://github.com/carsongee/archelon
       - name: consumer
-        url: https://github.com/superpedestrian/sp-web-consumer
+        url: https://github.com/superpedestrian/sp-web-consumer-site
+      - name: drupal
+        url: https://github.com/superpedestrian/sp-web-drupal
       - name: ios
         url: https://github.com/superpedestrian/sp-ios-mywheel
       - name: lambada
@@ -49,7 +51,7 @@ fixed_links:
     name: Butler
     subs:
       - name: account
-        url: https://build.internal.superpedestrian.com/job/Consumer%20Software/job/sp-web-consumer-site
+        url: https://build.internal.superpedestrian.com/job/Consumer%20Software/job/sp-web-account
       - name: android
         url: https://build.internal.superpedestrian.com/job/Consumer%20Software/job/android/
       - name: bauer
