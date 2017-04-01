@@ -1,1 +1,1 @@
-web: bash -c 'cd web/start && uwsgi uwsgi.ini'
+web: uwsgi --pythonpath=web/start web/start/uwsgi.ini
