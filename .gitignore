@@ -91,3 +91,4 @@ ENV/
 /web/start/index.html
 /web/start/style.css
 /shell/data.json
+/shell/data.csv
