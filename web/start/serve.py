@@ -5,7 +5,6 @@ import requests
 
 import generate
 
-print dirname(realpath(__file__))
 
 app = Flask(
     __name__,

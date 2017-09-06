@@ -11,9 +11,9 @@ def get_org_stats():
     """
     Get stats on each contributor in an organization on github.
     """
-    username = raw_input('GH Username: ')
-    password = raw_input('GH Password: ')
-    org = raw_input('GH Org: ')
+    username = input('GH Username: ')
+    password = input('GH Password: ')
+    org = input('GH Org: ')
     g = Github(username, password)
     contributors = dict()
 
@@ -57,7 +57,7 @@ def get_org_stats():
                 len(contributors[user]['repos'])
             )
         )
-    with open('data.csv', 'wb') as csvfile:
+    with open('data.csv', 'w') as csvfile:
         csv_writer = csv.writer(csvfile)
         csv_writer.writerow(
             [

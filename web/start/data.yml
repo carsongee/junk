@@ -26,67 +26,55 @@ greetings:
 fixed_links:
   - url: https://mail.worldminus.us
     name: Postman
-  - url: https://gmail.com
+  - url: https://outlook.office365.com/owa/?realm=affoa.org#exsvurl=1&ll-cc=1033&modurl=0
     name: Martinet
   - url: https://google.com
     name: Oracle
   - url: https://github.com/pulls
     name: Scribe
     subs:
-      - name: account
-        url: https://github.com/superpedestrian/sp-web-account
-      - name: android
-        url: https://github.com/superpedestrian/sp-android-project
-      - name: ansible
-        url: https://github.com/superpedestrian/ansible-cm
+      - name: Looks ios
+        url: https://github.com/affoa/iOS-Looks-App
+      - name: looks android
+        url: https://github.com/affoa/Android-Looks-App
+      - name: looks api
+        url: https://github.com/affoa/looks-api
       - name: archelon
         url: https://github.com/carsongee/archelon
-      - name: consumer
-        url: https://github.com/superpedestrian/sp-web-consumer-site
-      - name: drupal
-        url: https://github.com/superpedestrian/sp-web-drupal
-      - name: ios
-        url: https://github.com/superpedestrian/sp-ios-mywheel
+      - name: product
+        url: https://github.com/affoa/looks-product
+      - name: looks ios MFG
+        url: https://github.com/affoa/looks-ios-MFG
       - name: lambada
         url: https://github.com/superpedestrian/lambada
-      - name: lambda-ops
-        url: https://github.com/Superpedestrian/sp-lambda-ops
-      - name: jenkins
-        url: https://github.com/superpedestrian/sp-jenkins-build-tools
-      - name: mfg-cli
-        url: https://github.com/superpedestrian/sp-mfg-cli
+      - name: ops-lambada
+        url: https://github.com/affoa/ops-lambada
+      - name: Member Portal
+        url: https://github.com/affoa/AFFOAMemberPortal
+      - name: ios-plaid
+        url: https://github.com/affoa/iOS-plaid-code-reader
+      - name: android-plaid
+        url: https://github.com/affoa/Android-plaid-code-reader
       - name: pytest-pylint
         url: https://github.com/carsongee/pytest-pylint
-      - name: wheels
-        url: https://github.com/superpedestrian/sp-web-wheel-api
-      - name: wheel support
-        url: https://github.com/superpedestrian/sp-web-wheel-support
-  - url: https://build.internal.superpedestrian.com
+  - url: https://travis-ci.com/AFFOA
     name: Butler
     subs:
-      - name: account
-        url: https://build.internal.superpedestrian.com/job/Consumer%20Software/job/sp-web-account
-      - name: android
-        url: https://build.internal.superpedestrian.com/job/Consumer%20Software/job/android/
-      - name: bauer
-        url: https://build.internal.superpedestrian.com/job/Embedded%20Software/job/sp-emb-bauer-app/
-      - name: consumer
-        url: https://build.internal.superpedestrian.com/job/Consumer%20Software/job/sp-web-consumer-site
-      - name: jenkins-tools
-        url: https://build.internal.superpedestrian.com/job/DevOps/job/sp-jenkins-build-tools/
-      - name: ios
-        url: https://build.internal.superpedestrian.com/job/Consumer%20Software/job/ios
-      - name: mfg-cli
-        url: https://build.internal.superpedestrian.com/job/Manufacturing/job/sp-mfg-cli/
-      - name: wheel-api
-        url: https://build.internal.superpedestrian.com/job/Consumer%20Software/job/sp-web-wheel-api
+      - name: looks-android
+        url: https://travis-ci.com/AFFOA/Android-Looks-App
+      - name: looks-ios
+        url: https://travis-ci.com/AFFOA/iOS-Looks-App
+      - name: looks-api
+        url: https://travis-ci.com/AFFOA/looks-api
+      - name: member-portal
+        url: https://travis-ci.com/AFFOA/AFFOAMemberPortal
   - url: https://feedly.com
     name: Crier
   - url: http://www.zooborns.com/
     name: Feels
-  - url: https://app.commonkey.com
+  - url: https://lastpass.com
     name: Harpocrates
-  - url: https://superpedestrian-dev.signin.aws.amazon.com/console
+  - url: https://affoa.signin.aws.amazon.com/console
     name: Atlas
     subs:
       - name: EB
