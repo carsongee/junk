@@ -5,6 +5,10 @@ Downlaods the daily Bing wallpaper to a configured folder.
 from os import makedirs
 from os.path import expanduser, basename, join
 import requests
+try:
+    from urllib.parse import urlparse, parse_qs
+except ImportError:
+    from urlparse import urlparse, parse_qs
 
 BASE_URL = 'http://www.bing.com'
 WALLPAPER_QUERY = '/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=en-US'
@@ -21,8 +25,9 @@ def get_wallpaper():
     except OSError as exc:
         if exc.args[0] != 17:
             raise
+    filename = parse_qs(urlparse(url).query)['id'][0]
     wallpaper = requests.get('{}{}'.format(BASE_URL, url), stream=True)
-    with open(join(DOWNLOAD_PATH, basename(url)), 'wb') as file_descriptor:
+    with open(join(DOWNLOAD_PATH, filename), 'wb') as file_descriptor:
         for chunk in wallpaper.iter_content(chunk_size=128):
             file_descriptor.write(chunk)
 
