@@ -6,6 +6,10 @@ setup(
     py_modules=['junk'],
     install_requires=[
         'Click',
+        'Jinja2',
+        'PyGithub',
+        'PyYAML',
+        'requests',
     ],
     include_package_data=True,
     entry_points={

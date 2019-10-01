@@ -1,1 +1,0 @@
-web: uwsgi --pythonpath=web/start web/start/uwsgi.ini

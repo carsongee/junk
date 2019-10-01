@@ -1,6 +1,4 @@
-Flask
 Jinja2
 PyGithub
 PyYAML
 requests
-uwsgi
